@@ -1,7 +1,6 @@
-import { CursosModule } from './cursos/cursos.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ModalModule, AlertModule } from 'ngx-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -12,8 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    CursosModule,
-    NgbModule
+    ModalModule.forRoot(),
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
